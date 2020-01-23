@@ -68,7 +68,7 @@ class TwitterListener(StreamListener):
             if Tweets_folder.exists() == False:
                 Tweets_folder.mkdir()
             cwd = os.getcwd()
-            header = 'Date_Created,ID,User_Name,Screen_Name,Tweet,Geo'
+            header = 'Date_Created~ID,User_Name~Screen_Name~Tweet~Geo'
             with open(self.fectched_tweets_filename, "a") as tf:
                 if tf.tell() == 0:
                     tf.write(header +"\n")
@@ -77,16 +77,9 @@ class TwitterListener(StreamListener):
 
                 mydict = json.loads(raw_data.strip(","))
 
-                data = f"{mydict['created_at']},{mydict['user']['id']},{mydict['user']['name']},{mydict['user']['screen_name']},{mydict['text']},{mydict['geo']}"
+                data = f"{mydict['created_at']}~{mydict['user']['id']}~{mydict['user']['name']}~{mydict['user']['screen_name']}~{mydict['text']}~{mydict['geo']}"
                 print(data)
 
-                #///////////////////////////////
-                #why is this not working!!!!!!!!!!!
-                #end = datetime.time(datetime.now()).minute
-                #print(end)
-                #print(start)
-                #if end - start > 0:
-                    #sys.exit()
                 if len(data) > 0:
                     tf.write(data + "\n")
 
