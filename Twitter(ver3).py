@@ -68,17 +68,21 @@ class TwitterListener(StreamListener):
             if Tweets_folder.exists() == False:
                 Tweets_folder.mkdir()
             cwd = os.getcwd()
-            header = 'Date_Created~ID,User_Name~Screen_Name~Tweet~Geo'
+            header = 'Date_Created~]ID~]User_Name~]Screen_Name~]Tweet~]Geo_lat~]Geo_long~]Location~]Lat~]Long~]City~]Country'
             with open(self.fectched_tweets_filename, "a") as tf:
                 if tf.tell() == 0:
                     tf.write(header +"\n")
                 #////////////////////////////////////////////////////
                 #still need to clean the output up need to figure out how to stop printing the blank lines
-
+                #print(raw_data)
                 mydict = json.loads(raw_data.strip(","))
-
-                data = f"{mydict['created_at']}~{mydict['user']['id']}~{mydict['user']['name']}~{mydict['user']['screen_name']}~{mydict['text']}~{mydict['geo']}"
-                print(data)
+                #!!!!!!!!!!!!!!!!!!!??????????????????!!!!!!!!!!!!!!!!!!!!!!!!!
+                #there are line endings in the tweet text, these need to be stripped out to clean up the output
+                tweet_text = mydict['text'].replace('\n','').replace('\r','').replace('\t',' ')
+                data = f"{mydict['created_at']}~]{mydict['user']['id']}~]{mydict['user']['name']}~]{mydict['user']['screen_name']}~]{tweet_text}~]{mydict['geo']['coordinates'][0]}~]{mydict['geo']['coordinates'][1]}~]{mydict['user']['location']}~]{mydict['coordinates']['coordinates'][0]}~]{mydict['coordinates']['coordinates'][1]}~]{mydict['place']['name']}{mydict['place']['country']}"
+                #print(mydict['text'].replace("\n",""))
+                if mydict['user']['geo_enabled'] == 'true':
+                    print(data)
 
                 if len(data) > 0:
                     tf.write(data + "\n")
