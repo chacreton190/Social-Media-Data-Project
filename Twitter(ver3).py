@@ -89,10 +89,14 @@ class TwitterListener(StreamListener):
                     country = "None"
 
                 data = f"{mydict['created_at']}~]{mydict['user']['id']}~]{mydict['user']['name']}~]{mydict['user']['screen_name']}~]{tweet_text}~]{geo_lat}~]{geo_long}~]{mydict['user']['location']}~]{lat}~]{long}~]{city}~]{country}"
-                if mydict['user']['geo_enabled'] == 'true':
-                    print(data)
-                if len(data) > 0:
+                #print(hash_tag_list.split(","))
+
+                #only outputs when it finds a search term in the user location, need to add code to allow you to sele
+                #which output you want
+                if mydict['user']['location'] in hash_tag_list.split(","):
                     tf.write(data + "\n")
+                #if len(data) > 0:
+                    #tf.write(data + "\n")
 
         except BaseException as e:
             print("!" *20 + "\n", f"!!ERROR!! {e}")
