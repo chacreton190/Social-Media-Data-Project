@@ -112,7 +112,6 @@ if __name__ == "__main__":
     cwd = os.getcwd()
     Set_Path_File()
     hash_tag_list = input("Please enter your search terms\nBe sure to separate them with a comma(,).\n>>")
-    #print(hash_tag_list)
     fetched_tweets_filename_noext = input("What would you like to name your output file?\n>>")
     fetched_tweets_filename = f"{cwd}\\Twitter Results\\{fetched_tweets_filename_noext}_{date.today()}.txt"
     twitter_streamer = TwitterStreamer()
