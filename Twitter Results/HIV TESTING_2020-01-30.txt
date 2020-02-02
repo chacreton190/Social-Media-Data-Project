@@ -1,0 +1,4 @@
+Date_Created~]ID~]User_Name~]Screen_Name~]Tweet_Text~]Geo_lat~]Geo_long~]Location~]Lat~]Long~]City~]Country
+Thu Jan 30 19:41:57 +0000 2020~]2962895748~]VNW~]CocoaPuffGrl~]RT @NMACCommunity: Passive HIV Testing Programs Effective at Reaching High-Risk Residents, Study Suggests https://t.co/VDYfUGCUrT https://t…~]None~]None~]Decatur, GA~]None~]None~]None~]None
+Thu Jan 30 19:43:39 +0000 2020~]2526802614~]Muay Mios~]muay_mios~]@_h_x_n_n_x_ You're out of nowhere with your like. Don't you realize that 35 million people died due to fraudulent… https://t.co/XtOIpsVAgd~]None~]None~]United States~]None~]None~]None~]None
+Thu Jan 30 19:50:57 +0000 2020~]1204257093924139009~]Pauly Want It All~]AllPauly~]RT @kingkiraa: THE JACKSON STATE UNIVERSITY CAMPUS CLINIC IS FREE. FREE URINE STD/STI TESTING. FREE HIV TESTING IF YOU ASK FOR IT. FREE BIR…~]None~]None~]Clinton, MS~]None~]None~]None~]None
