@@ -7,3 +7,4 @@ weed,heroin,drunk,prostitue,oxy,molly,zanny,zonkeys,China white,zanny bars,Trank
 
 HIV Search Terms:
 >>HIV, HIV/AIDS, HIV testing, HIV medication, AIDS test, HIV test, HIV+, HIV(+), rapid-HIV test, rapid HIV test, ora-sure,orasure
+
