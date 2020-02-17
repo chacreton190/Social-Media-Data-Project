@@ -1,3 +1,0 @@
-Date_Created~]ID~]User_Name~]Screen_Name~]Tweet_Text~]Geo_lat~]Geo_long~]Location~]Lat~]Long~]City~]Country
-Tue Jan 28 03:08:45 +0000 2020~]1883846989~]Rob Tannenbaum~]RobTPhoto~]RT @atrupar: This is a particularly brazen instance of gaslighting. The "transcript" indicates that Trump used military aid as leverage for…~]None~]None~]New York~]None~]None~]None~]None
-Tue Jan 28 03:10:53 +0000 2020~]397793960~]Kevin Brady~]KevinQBrady~]RT @nwmalinowski: We've forced them to release many people from prison in New York State, but costs have remained the same. https://t.co/Mj…~]None~]None~]New York~]None~]None~]None~]None
