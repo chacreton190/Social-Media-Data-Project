@@ -1,2 +1,0 @@
-Date_Created~]ID~]User_Name~]Screen_Name~]Tweet_Text~]Geo_lat~]Geo_long~]Location~]Lat~]Long~]City~]Country
-Thu Jan 30 19:41:57 +0000 2020~]2962895748~]VNW~]CocoaPuffGrl~]RT @NMACCommunity: Passive HIV Testing Programs Effective at Reaching High-Risk Residents, Study Suggests https://t.co/VDYfUGCUrT https://t…~]None~]None~]Decatur, GA~]None~]None~]None~]None
