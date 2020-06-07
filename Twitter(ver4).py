@@ -77,7 +77,7 @@ class TwitterListener(StreamListener):
                 if Tweets_folder.exists() == False:
                     Tweets_folder.mkdir()
                 cwd = os.getcwd()
-                header = f'Date_Created~]ID~]User_Name~]Screen_Name~]Tweet_Text~]Geo_lat~]Geo_long~]Location~]Lat~]Long~]City~]Country~]Language~]Start_time_{now}~]End_time_{end_time}'
+                header = f'Date_Created~]ID~]User_Name~]Screen_Name~]Tweet_Text~]Geo_lat~]Geo_long~]Location~]Lat~]Long~]City~]Country~]Language~]Follower_Count~]Friend_Count~]Retweet_Count~]Favorite_Count~]Reply_count~]Start_time_{now}~]End_time_{end_time}'
                 with open(self.fectched_tweets_filename, "a", encoding="utf-8") as tf:
                     if tf.tell() == 0:
                         tf.write(header +"\n")
@@ -98,7 +98,7 @@ class TwitterListener(StreamListener):
                         city = "None"
                         country = "None"
 
-                    data = f"{mydict['created_at']}~]{mydict['user']['id']}~]{mydict['user']['name']}~]{mydict['user']['screen_name']}~]{tweet_text}~]{geo_lat}~]{geo_long}~]{mydict['user']['location']}~]{lat}~]{long}~]{city}~]{country}~]{mydict['lang']}"
+                    data = f"{mydict['created_at']}~]{mydict['user']['id']}~]{mydict['user']['name']}~]{mydict['user']['screen_name']}~]{tweet_text}~]{geo_lat}~]{geo_long}~]{mydict['user']['location']}~]{lat}~]{long}~]{city}~]{country}~]{mydict['lang']}~]{mydict['user']['followers_count']}~]{mydict['user']['friends_count']}~]{mydict['retweet_count']}~]{mydict['favorite_count']}~]{mydict['reply_count']}"
                     # /////////////////////////////////////////////////////////////
                     #only outputs when it finds a search term in the user location, need to add code to allow you to sele
                     #which output you want
