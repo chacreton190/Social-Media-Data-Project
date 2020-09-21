@@ -1,0 +1,6 @@
+Search_term_file, Output_file, Date
+Custom List, TRUMP.txt, 2020-08-09
+COVID & Mask Search Terms(2020-08-09).txt, COVID Mask Only Search.txt, 2020-08-09 18:00:26.449031
+Custom List, TRTUMP.txt, 2020-08-09
+Custom List, TRTRTRTR.txt, 2020-08-09
+Custom List, dfdfd.txt, 2020-08-09
